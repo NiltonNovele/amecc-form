@@ -97,8 +97,8 @@ export function Summary() {
           description="Double-check all your information before submitting your form."
         />
         <p className="mt-5 text-gray-700">
-          Once you submit, you won't be able to make changes, so make sure all
-          your details are correct.
+          Once you submit, you won&apos;t be able to make changes, so make sure
+          all your details are correct.
         </p>
       </Form.Card>
 
