@@ -1,19 +1,16 @@
 import { MongoClient } from "mongodb";
 
-// Hardcoded MongoDB URI
-const uri =
-  "mongodb+srv://niltonnovele_db_user:mz5iqsBLaFPvNJtM@cluster0.8no4fd1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-
+const uri = process.env.MONGODB_URI;
 const options = {};
 
-let client: MongoClient;
+let client;
 let clientPromise: Promise<MongoClient>;
 
-if (!uri) {
-  throw new Error("Mongo URI is missing!");
+if (!process.env.MONGODB_URI) {
+  throw new Error("Please add your Mongo URI to .env.local");
 }
 
-client = new MongoClient(uri, options);
+client = new MongoClient(uri!, options);
 clientPromise = client.connect();
 
 export default clientPromise;
