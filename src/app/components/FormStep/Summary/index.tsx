@@ -70,7 +70,7 @@ export function Summary() {
             Your submission has been received successfully.
           </p>
           <a
-            href="https://chat.whatsapp.com/your-group-link"
+            href="https://chat.whatsapp.com/Dj9ALdGmyx06C6LCnGTY8v?mode=ems_copy_t"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-6 py-3 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition-colors duration-200"
